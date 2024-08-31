@@ -59,3 +59,23 @@ variable "load_balancer_internal" {
 variable "load_balancer_type" {
   type = string
 }
+
+#
+# Ecs general
+#
+# variable "nodes_ami" {
+#   type = string
+# }
+
+# variable "node_instance_type" {
+#   type = string
+# }
+
+# variable "node_volume_size" {
+#   type = string
+# }
+
+# variable "node_volume_type" {
+#   type = string
+# }
+

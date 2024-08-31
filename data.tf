@@ -12,7 +12,7 @@ data "aws_ssm_parameter" "vpc" {
 }
 
 #
-# SUBNETS
+# Subnets
 #
 data "aws_ssm_parameter" "subnet_public_1a" {
   name = var.ssm_public_subnet_1
