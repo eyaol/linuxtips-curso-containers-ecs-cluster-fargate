@@ -63,19 +63,47 @@ variable "load_balancer_type" {
 #
 # Ecs general
 #
-# variable "nodes_ami" {
-#   type = string
-# }
+variable "nodes_ami" {
+  type = string
+}
 
-# variable "node_instance_type" {
-#   type = string
-# }
+variable "node_instance_type" {
+  type = string
+}
 
-# variable "node_volume_size" {
-#   type = string
-# }
+variable "node_volume_size" {
+  type = string
+}
 
-# variable "node_volume_type" {
-#   type = string
-# }
+variable "node_volume_type" {
+  type = string
+}
 
+variable "cluster_on_demand_min_size" {
+  type = number
+}
+
+variable "cluster_on_demand_max_size" {
+  type = number
+}
+
+variable "cluster_on_demand_desired_size" {
+  type = number
+}
+
+variable "cluster_spot_min_size" {
+  type = number
+}
+
+variable "cluster_spot_max_size" {
+  type = number
+}
+
+variable "cluster_spot_desired_size" {
+  type = number
+}
+
+variable "instance_profile_name" {
+  type    = string
+  default = "ecsInstanceProfile"
+}
