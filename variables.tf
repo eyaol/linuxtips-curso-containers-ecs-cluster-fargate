@@ -107,3 +107,10 @@ variable "instance_profile_name" {
   type    = string
   default = "ecsInstanceProfile"
 }
+
+variable "capacity_providers" {
+  type = list
+  default = [
+    "FARGATE", "FARGATE_SPOT"
+  ]
+}
